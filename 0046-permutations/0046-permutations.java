@@ -8,13 +8,13 @@ class Solution {
             if(index==nums.length){
                 ans.add(toList(nums));
                 return;
-            }else{
-                 for(int i=index;i<nums.length;i++){
-                    swap(i,index,nums);
-                    dfs(nums,index+1);
-                    swap(i,index,nums);
-                }
             }
+             for(int i=index;i<nums.length;i++){
+                swap(i,index,nums);
+                dfs(nums,index+1);
+                swap(i,index,nums);
+            }
+        
     }
     private void swap(int x,int y, int []nums){
         int temp=nums[x];
