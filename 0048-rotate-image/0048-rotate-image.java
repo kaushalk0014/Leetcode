@@ -14,9 +14,9 @@ class Solution {
             int end=col-1;
             for(int j=0;j<col/2;j++){
                 int temp=matrix[i][j];
-                matrix[i][j]=matrix[i][end];
-                matrix[i][end]=temp;
-                end--;
+                matrix[i][j]=matrix[i][end-j];
+                matrix[i][end-j]=temp;
+                 
             }
         }
         
