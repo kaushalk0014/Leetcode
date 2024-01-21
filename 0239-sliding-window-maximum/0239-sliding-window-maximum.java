@@ -13,8 +13,10 @@ class Solution {
              while(!deque.isEmpty()&&nums[deque.peekLast()]<nums[i]){
                  deque.pollLast();
              }
+            //add element index to deque
             deque.offer(i);
             
+            //add maximun element to result arrau
             if(i>=k-1){
                 result[index]=nums[deque.peek()];
                 index++;
