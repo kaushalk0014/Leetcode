@@ -14,7 +14,6 @@ class Solution {
 
         for(int i= str.length()-1;  i>=0; i--){
             int currectValue= map.get(str.charAt(i));
-
             if(currectValue < prevValue){
                 result= result- currectValue;
             }else{
